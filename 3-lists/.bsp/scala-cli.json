@@ -1,0 +1,20 @@
+{
+  "name": "scala-cli",
+  "argv": [
+    "C:\\Users\\vmtam\\AppData\\Local\\Coursier\\data\\bin\\.scala-cli.aux.exe",
+    "bsp",
+    "--json-options",
+    "C:\\Users\\vmtam\\Documents\\Jobs\\Experian\\learning\\3-lists\\.scala-build\\ide-options-v2.json",
+    "--json-launcher-options",
+    "C:\\Users\\vmtam\\Documents\\Jobs\\Experian\\learning\\3-lists\\.scala-build\\ide-launcher-options.json",
+    "--envs-file",
+    "C:\\Users\\vmtam\\Documents\\Jobs\\Experian\\learning\\3-lists\\.scala-build\\ide-envs.json",
+    "C:\\Users\\vmtam\\Documents\\Jobs\\Experian\\learning\\3-lists\\createlist.scala"
+  ],
+  "version": "1.7.1",
+  "bspVersion": "2.1.1",
+  "languages": [
+    "scala",
+    "java"
+  ]
+}
