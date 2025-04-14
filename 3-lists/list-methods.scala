@@ -49,4 +49,38 @@
 
     // same as previous but more consise
     thrill.foreach(println); // Will fill until
+
+    // returns the first element in the list
+    println(thrill.head); // Will
+
+    // returns a list of all but the last in the list
+    println(thrill.init); // List(Will, fill)
+
+
+    // indicates whether the trhill list is empty
+    println(thrill.isEmpty); // false
+
+    // returns the last element in the thrill list
+    println(thrill.last);
+
+    // returns the number of elements in the trhill list
+    println(thrill.length);
+
+    // returns a list resulting from adding a "y" to each string element
+    println(thrill.map(s => s + "y")); // List(Willy, filly, untily)
+
+    // makes a string with the elements of the list, sparated by a comma
+    println(thrill.mkString(", ")); // Will, fill, until
+
+    // Returns a list of all elements in in order that don't follow the predicate
+    println(thrill.filterNot(s => s.length == 4)); 
+
+    // Returns a list of all elements in reverse order
+    println(thrill.reverse);
+
+    // returns a list containing all elements of the thrill list in alphabetical order
+    println(thrill.sortWith((s, t) => s.charAt(0).toLower < t.charAt(0).toLower)); // List(fill, until, Will)
+
+    // retruns the list minus its first elemnt
+    println(thrill.tail);
 }
