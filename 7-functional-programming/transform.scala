@@ -23,8 +23,14 @@
     val usingMap = ques.map(q => q.toLowerCase + "?");
     println(usingMap); // Vector(who?, what?, when?, where?, why?, how?)
 
-    // looks for an element that matches the predicate, and returns that element rwapped in a Some()
-    // if no element is found, it returns None
-    println(ques.find(q => q.startsWith("W"))); // Some(Who)
+    // looks for an element that matches the predicate, and returns that element rwapped in a Some
+    // if no element is found, it returns None. Some and None are options
+    val startsWithW = ques.find(q => q.startsWith("W"));
+    println(startsWithW); // Some(Who)
     println(ques.find(q => q.startsWith("X"))); // None
+
+    // Options have a map method that allows you to transform the value inside the option
+    startsWithW.map(q => q + " is a question word").foreach(println); // Who is a question word
+
+    println(for word <- startsWithW yield word.toUpperCase)
 }
